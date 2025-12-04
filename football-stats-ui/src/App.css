@@ -1,0 +1,145 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.app-header {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #1f2937;
+  background: #020617;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.app-header p {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  padding: 0.75rem;
+}
+
+.panel {
+  background: #020617;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  border: 1px solid #1f2937;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  border-bottom: 1px solid #1f2937;
+  padding-bottom: 0.5rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+}
+
+.list-item {
+  padding: 0.5rem 0.6rem;
+  margin-bottom: 0.25rem;
+  border-radius: 0.5rem;
+  background: #020617;
+  border: 1px solid #1f2937;
+  cursor: pointer;
+  transition: background 0.1s, border-color 0.1s;
+}
+
+.list-item:hover {
+  background: #111827;
+  border-color: #374151;
+}
+
+.list-item.selected {
+  background: #1d4ed8;
+  border-color: #60a5fa;
+}
+
+.list-item .sub {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.info-banner,
+.error-banner {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.info-banner {
+  background: #0f766e;
+}
+
+.error-banner {
+  background: #b91c1c;
+}
+
+.player-card {
+  background: #030712;
+  border-radius: 0.75rem;
+  border: 1px solid #1f2937;
+  padding: 0.75rem;
+}
+
+.player-card h3 {
+  margin-top: 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.gk-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.gk-table th,
+.gk-table td {
+  border-bottom: 1px solid #1f2937;
+  padding: 0.3rem 0.4rem;
+  text-align: left;
+}
+
+.gk-table th {
+  background: #020617;
+  position: sticky;
+  top: 0;
+}
+
+.hint {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  margin-top: 0.5rem;
+}
